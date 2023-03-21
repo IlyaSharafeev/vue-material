@@ -1,0 +1,8 @@
+@import "mixins";
+@import "reset";
+
+.onlyDesktop {
+  @include mediaMedium {
+    display: none !important;
+  }
+}

@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <Header/>
+    <MainSlide/>
+    <StatisticMarkets/>
+    <WhyBTCMarkets/>
+    <VipProgram/>
+    <StartTrading/>
+    <Divider :top="106" :bottom="127"/>
+    <NewsCrypto/>
+    <SwitchTheme/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "@/components/Header";
+import MainSlide from "@/components/MainSlide";
+import StatisticMarkets from "@/components/StatisticMarkets/StatisticMarkets";
+import WhyBTCMarkets from "@/components/WhyBTCMarkets";
+import VipProgram from "@/components/VipProgram";
+import StartTrading from "@/components/StartTrading";
+import Divider from "@/components/Divider";
+import NewsCrypto from "@/components/NewsCryptoComponents/NewsCrypto";
+import SwitchTheme from "@/components/SwitchTheme";
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    SwitchTheme,
+    NewsCrypto,
+    Divider,
+    StartTrading,
+    VipProgram,
+    WhyBTCMarkets,
+    StatisticMarkets,
+    MainSlide,
+    Header}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+.wrapper {
+  padding: 32px 32px 66px;
 }
 </style>
