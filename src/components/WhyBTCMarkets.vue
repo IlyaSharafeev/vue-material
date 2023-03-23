@@ -50,7 +50,7 @@ export default {
     display: flex;
     font-size: 46px;
     letter-spacing: 1px;
-    color: #000000;
+    color: var(--main-slide-title);
     justify-content: center;
   }
 

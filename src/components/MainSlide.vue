@@ -45,7 +45,7 @@ export default {
       font-size: 71px;
       line-height: 90px;
       letter-spacing: 1px;
-      color: #000000;
+      color: var(--main-slide-title);
     }
 
     &-description {
@@ -54,7 +54,7 @@ export default {
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.1px;
-      color: #27272A;
+      color: var(--main-slide-description);
     }
 
     &-buttons {
@@ -66,7 +66,7 @@ export default {
         cursor: pointer;
         border-radius: 4px;
         padding: 9px 33px;
-        border: 1px solid #18181B;
+        border: 1px solid var(--border-button);
       }
 
       &_green {

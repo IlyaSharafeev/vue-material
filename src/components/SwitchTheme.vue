@@ -17,7 +17,14 @@ export default {
   name: "SwitchTheme",
   methods: {
     switchTheme() {
-      console.log('testing');
+      const currentTheme = this.$material.theming.theme;
+      if(currentTheme === 'dark') {
+        document.body.removeAttribute('dark');
+        this.$material.theming.theme = 'light';
+      } else {
+        document.body.setAttribute('dark', '');
+        this.$material.theming.theme = 'dark';
+      }
     }
   }
 }

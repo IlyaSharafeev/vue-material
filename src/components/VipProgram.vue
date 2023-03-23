@@ -78,7 +78,7 @@ export default {
   &__button {
     cursor: pointer;
     margin-top: 90px;
-    border: 1px solid #18181B;
+    border: 1px solid var(--border-button);
     border-radius: 4px;
     padding: 9px 33px;
     font-size: 16px;

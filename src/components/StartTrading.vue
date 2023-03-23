@@ -68,7 +68,7 @@ export default {
 
       img {
         padding: 20px;
-        background-color: #fcf4f1;
+        background-color: var(--shadow);
         width: 72px;
         height: 72px;
       }

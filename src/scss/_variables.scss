@@ -1,0 +1,17 @@
+:root {
+  --main-slide-title: #27272A;
+  --main-slide-description: #27272A;
+  --border-button: #18181B;
+  --shadow: rgba(9, 24, 26, 0.04);
+  --arrow-header: black;
+  --button-text: #444343;
+}
+
+[dark] {
+  --main-slide-title: #cecece;
+  --main-slide-description: #cecece;
+  --border-button: #a4a4a4;
+  --shadow: rgba(215, 215, 215, 0.74);
+  --arrow-header: white;
+  --button-text: #343131;
+}

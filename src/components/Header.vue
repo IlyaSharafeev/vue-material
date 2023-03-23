@@ -65,7 +65,7 @@ export default {
       align-items: flex-start;
 
       i {
-        border: solid black;
+        border: solid var(--arrow-header);
         border-width: 0 1px 1px 0;
         display: inline-block;
         padding: 3px;
@@ -95,7 +95,7 @@ export default {
       }
 
       .button-log-in {
-        border: 1px solid #18181B;
+        border: 1px solid var(--border-button);
         border-radius: 4px;
       }
 

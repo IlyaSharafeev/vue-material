@@ -4,7 +4,7 @@
     Find out the latest crypto news
   </div>
   <div class="news-crypto__cards">
-    <NewsCard v-for="(value, key) in 3" :key="key"/>
+    <NewsCard v-for="(card, key) in newsCards" :card="card" :key="key"/>
   </div>
   <div class="news-crypto__description">
     Check out more of our crypto news
@@ -36,9 +36,16 @@
 
 <script>
 import NewsCard from "@/components/NewsCryptoComponents/NewsCard";
+import {NEWS_CARDS} from "@/data/newsCards";
+
 export default {
   name: "NewsCrypto",
-  components: {NewsCard}
+  components: {NewsCard},
+  data () {
+    return {
+      newsCards: NEWS_CARDS,
+    }
+  }
 }
 </script>
 

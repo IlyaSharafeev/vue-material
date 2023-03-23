@@ -93,6 +93,7 @@ export default {
     span {
       background: #4CFDC7;
       border: 1px solid #4CFDC7;
+      color: var(--button-text);
       border-radius: 4px;
       padding: 9px 17px;
     }

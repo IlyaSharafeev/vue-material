@@ -9,6 +9,8 @@
     <Divider :top="106" :bottom="127"/>
     <NewsCrypto/>
     <SwitchTheme/>
+    <ScrollIndicator/>
+    <ScrollToTop/>
   </div>
 </template>
 
@@ -22,9 +24,14 @@ import StartTrading from "@/components/StartTrading";
 import Divider from "@/components/Divider";
 import NewsCrypto from "@/components/NewsCryptoComponents/NewsCrypto";
 import SwitchTheme from "@/components/SwitchTheme";
+import ScrollIndicator from "@/components/Scrolls/ScrollIndicator";
+import ScrollToTop from "@/components/Scrolls/ScrollToTop";
+
 export default {
   name: 'App',
   components: {
+    ScrollToTop,
+    ScrollIndicator,
     SwitchTheme,
     NewsCrypto,
     Divider,
@@ -33,7 +40,8 @@ export default {
     WhyBTCMarkets,
     StatisticMarkets,
     MainSlide,
-    Header}
+    Header
+  }
 }
 </script>
 
